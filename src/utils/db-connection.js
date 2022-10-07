@@ -1,7 +1,5 @@
 const mysql = require("mysql2/promise");
-const {
-  mysql: connections,
-} = require("../../../zelda_leadhunters/connections");
+const { mysql: connections } = require("../../../zelda_reportes/connections");
 
 const getConnection = async (key = null) => {
   const dsn = connections[key];
